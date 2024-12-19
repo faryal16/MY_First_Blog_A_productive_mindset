@@ -1,101 +1,58 @@
-import Image from "next/image";
+import Image from 'next/image'
+import { FaFacebook,  FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
+import home from "@/app/images/home.png"
+import Home from '@/components/Home'
+import BlogShowcase from '@/components/Blogshowcase'
+import Link from 'next/link'
 
-export default function Home() {
+
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="min-h-screen  ">
+      <div className="flex flex-col md:flex-row  justify-center items-center">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Content */}
+      <div className=" container md:w-1/2 w-full md:mx-auto ">
+        <div className="flex flex-col bg-g items-center justify-center md:min-h-[100vh] min-h-[60vh] text-left ">
+          <h1 className="text-5xl text-green-800  md:text-8xl font-bold  mb-6 animate-fade-in">
+            BOOST YOUR
+            <span className="block mt-6">SUCCESS</span>
+          </h1>
+
+          <p className="text-3xl md:text-5xl text-green-700 mb-12 max-w-2xl">
+          Tips and tools for a productive mindset
+          </p>
+
+          <button className="bg-gradient-to-r from-green-400 to-green-950 hover:from-green-950 hover:to-green-400 text-white text-2xl  font-bold py-3 px-8 w-[260px] h-[40px] rounded-full 
+            transition-transform hover:scale-105 shadow-lg">
+            <Link href="/contact">Contact Now</Link>
+          </button>
+
+
+          {/* Social Icons */}
+          <div className="mt-16 flex space-x-6">
+            <a href="#" className=" hover:text-green-900 transition-colors">
+              <FaFacebook className="w-10 h-10" />
+            </a>
+            <a href="https://www.linkedin.com/in/faryal-junaid-06780b2b4/" className=" hover:text-green-900 transition-colors">
+              <FaLinkedin className="w-10 h-10" />
+            </a>
+            <a href="https://www.instagram.com/bint_e_farzana/" className=" hover:text-green-900 transition-colors">
+              <FaInstagram className="w-10 h-10" />
+            </a>
+            <a href="https://github.com/faryal16" className=" hover:text-green-900 transition-colors">
+              <FaGithub className="w-10 h-10" />
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </div>
+      <div className="md:w-1/2  w-auto ">
+        <Image src={home} alt='' width={480} height={400} className='rounded-[60px] shadow-lg  hover:shadow-2xl hover:shadow-green-800 hover:border-2 hover:border-green-800 transition-shadow duration-300' />
+      </div>
+      </div>
+         <Home />
+         <BlogShowcase/>
+    </main>
+  )
 }
+
