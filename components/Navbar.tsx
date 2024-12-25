@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
   <Link
     href="/"
-    className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 hover:scale-110 transform transition-all duration-300 ease-in-out   hover:from-green-600 hover:to-green-900 flex items-center space-x-2"
+    className="text-4xl font-thin italic text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 hover:scale-110 transform transition-all duration-300 ease-in-out   hover:from-green-600 hover:to-green-900 flex items-center space-x-2"
   >
     
     <span>Fairy&#39;sBlog</span>

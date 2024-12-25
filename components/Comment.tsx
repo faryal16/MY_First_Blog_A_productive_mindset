@@ -1,22 +1,37 @@
-"use client"
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
+
 // Define an interface for the comment structure
 interface Comment {
-    name: string;
-    content: string;
-  }
-  
-  const CommentSection = () => {
-      const [comments, setComments] = useState<Comment[]>([]); // Changed from string[] to Comment[]
+  name: string;
+  content: string;
+}
+
+const CommentSection = () => {
+  const [comments, setComments] = useState<Comment[]>([]); // Stores comments
   const [name, setName] = useState(""); // Stores name
   const [newComment, setNewComment] = useState(""); // Stores comment text
 
-  const handleAddComment = (e: { preventDefault: () => void; }) => {
+  // Load comments from local storage on component mount
+  useEffect(() => {
+    const storedComments = localStorage.getItem("comments");
+    if (storedComments) {
+      setComments(JSON.parse(storedComments));
+    }
+  }, []);
+
+  // Save comments to local storage whenever they are updated
+  useEffect(() => {
+    localStorage.setItem("comments", JSON.stringify(comments));
+  }, [comments]);
+
+  const handleAddComment = (e: React.FormEvent) => {
     e.preventDefault();
     if (name.trim() === "" || newComment.trim() === "") return;
 
     // Add new comment with name
-    setComments([...comments, { name, content: newComment }]);
+    const updatedComments = [...comments, { name, content: newComment }];
+    setComments(updatedComments);
     setName("");
     setNewComment("");
   };
@@ -43,10 +58,7 @@ interface Comment {
       </div>
 
       {/* Add Comment Form */}
-      <form
-        onSubmit={handleAddComment}
-        className="flex flex-col space-y-4"
-      >
+      <form onSubmit={handleAddComment} className="flex flex-col space-y-4">
         <input
           type="text"
           placeholder="Enter your name"

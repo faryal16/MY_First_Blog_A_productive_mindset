@@ -19,7 +19,7 @@ const blogPosts = [
     h3:" Identifying Your Core Values and Passions",
     para3:"A key step in self-discovery is identifying what truly matters to you. Your core values act as guiding principles, shaping your decisions and direction in life. By exploring your interests, passions, and the moments that bring you joy, you gain clarity on what fuels your sense of purpose. Aligning your daily life with your values creates fulfillment and meaning.",
     h4:"Taking Action Toward Personal Growth",
-    para4:"Self-discovery isn&#39;t just about understanding yourself—it's about taking actionable steps toward personal growth. Once you've identified areas where you want to improve, set realistic goals, embrace challenges, and celebrate progress. Growth requires consistency and resilience, but each step brings you closer to becoming the best version of yourself."
+    para4:"Self-discovery isn't just about understanding yourself—it's about taking actionable steps toward personal growth. Once you've identified areas where you want to improve, set realistic goals, embrace challenges, and celebrate progress. Growth requires consistency and resilience, but each step brings you closer to becoming the best version of yourself."
 
   },
 
