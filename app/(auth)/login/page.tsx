@@ -76,7 +76,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   placeholder="Email or Phone Number"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full  border-[1px] border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
+                  className="w-full p border-[1px] border-gray-300 focus:border-black focus:ring-0 rounded-lg p-2"
                   required
                 />
               </div>
@@ -86,7 +86,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-     className="w-full  border-[1px] border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
+     className="w-full p border-[1px] border-gray-300 focus:border-black focus:ring-0 rounded-lg p-2"
                   required
                 />
               </div>

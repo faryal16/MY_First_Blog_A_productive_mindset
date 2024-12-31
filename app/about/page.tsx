@@ -131,7 +131,7 @@ export default function AboutPage() {
           for developers.
         </p>
         <motion.button
-          className="btn text-white text-2xl font-bold py-3 px-8 w-[260px] h-[40px] rounded-full 
+          className=" bg-gradient-to-r from-purple-400 to-lime-400 hover:from-green-900 hover:to-yellow-900 text-white md:text-2xl text-xl font-bold  md:w-[260px] w-[150px] h-[40px] rounded-full 
           transition-transform hover:scale-105 shadow-lg"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

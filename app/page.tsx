@@ -23,7 +23,7 @@ export default function Page() {
           Tips and tools for a productive mindset
           </p>
 
-          <button className="bg-gradient-to-r from-green-400 to-green-950 hover:from-green-950 hover:to-green-400 text-white text-2xl  font-bold py-3 px-8 w-[260px] h-[40px] rounded-full 
+          <button className="flex justify-center items-center bg-gradient-to-r from-green-400 to-green-950 hover:from-green-950 hover:to-green-400 text-white text-2xl  font-bold py-3 px-8 w-[260px] h-[40px] rounded-full 
             transition-transform hover:scale-105 shadow-lg">
             <Link href="/contact">Contact Now</Link>
           </button>

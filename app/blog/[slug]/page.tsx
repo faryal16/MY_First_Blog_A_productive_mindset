@@ -136,7 +136,7 @@ export default async function DynamicSlugPage({ params }: Props) {
 
   return (
     <article className="container mx-auto px-4 py-8 max-w-7xl ">
-    <Image src={blogPost.image} alt='' width={800} height={400} className="rounded-[60px] shadow-lg shadow-blue-300 flex justify-center items-center md:ml-24 ml-0" />
+    <Image src={blogPost.image} alt='' width={800} height={400} className="rounded-[60px] shadow-lg shadow-blue-300 flex justify-center items-center md:ml-24 ml-4" />
   <header className="mb-8 mt-12 text-center">
     <h1 className="text-4xl md:text-5xl text-fuchsia-500 font-bold mb-4">
       {blogPost.title}
@@ -154,28 +154,28 @@ export default async function DynamicSlugPage({ params }: Props) {
 
   <div className="prose lg:prose-xl mt-12 ">
     <section className="mb-12">
-      <h2 className='text-4xl underline mb-4 text-amber-700 '>1. {blogPost.h1}</h2>
+      <h2 className='text-4xl underline mb-4 text-gray-700 '>1. {blogPost.h1}</h2>
       <p className='text-2xl '>
         {blogPost.para1}
       </p>
     </section>
 
     <section className="mb-12">
-      <h2 className='text-4xl underline mb-4 text-amber-700'>2. {blogPost.h2}</h2>
+      <h2 className='text-4xl underline mb-4 text-gray-700'>2. {blogPost.h2}</h2>
       <ul className='text-2xl '>
        {blogPost.para2}
       </ul>
     </section>
 
     <section className="mb-12">
-      <h2 className='text-4xl underline mb-4 text-amber-700'>3. {blogPost.h3}</h2>
+      <h2 className='text-4xl underline mb-4 text-gray-700'>3. {blogPost.h3}</h2>
       <ol className='text-2xl '>
        {blogPost.para3}
       </ol>
     </section>
 
     <section className="mb-12">
-      <h2 className='text-4xl underline mb-4 text-amber-700'>4. {blogPost.h4}</h2>
+      <h2 className='text-4xl underline mb-4 text-gray-700'>4. {blogPost.h4}</h2>
       <p className='text-2xl '>
        {blogPost.para4}
       </p>

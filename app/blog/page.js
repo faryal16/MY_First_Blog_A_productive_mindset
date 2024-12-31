@@ -122,7 +122,7 @@ export default function BlogPage() {
             </p>
             <Link 
               href="/blog/featured"
-              className="inline-block btn w-[160px] h-[44px] text-2xl text-center text-white  px-6 py-3 rounded-full font-medium transition-colors"
+              className=" btn w-[160px] h-[44px] text-2xl text-center text-white  px-6 py-3 rounded-full font-medium transition-colors"
             >
               Read More
             </Link>
@@ -209,7 +209,7 @@ export default function BlogPage() {
               />
               <button
                 type="submit"
-                className="bg-gradient-to-r from-green-400 to-green-950 hover:from-green-950 hover:to-green-400 text-white text-2xl  font-bold py-3 px-8 md:w-[260px] w-auto h-[40px] rounded-full 
+                className="flex justify-center items-center bg-gradient-to-r from-green-400 to-green-950 hover:from-green-950 hover:to-green-400 text-white text-2xl  font-bold py-3 px-8 md:w-[260px] w-[150px] h-[40px] rounded-full 
             transition-transform hover:scale-105 shadow-lg"
               >
                 Subscribe
