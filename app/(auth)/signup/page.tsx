@@ -85,7 +85,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         onChange={(e) =>
           setFormData({ ...formData, name: e.target.value })
         }
-        className="w-full border-0 border-b border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
+        className="w-full  border-[1px] border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
         required
       />
     </div>
@@ -97,7 +97,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         onChange={(e) =>
           setFormData({ ...formData, email: e.target.value })
         }
-        className="w-full border-0 border-b border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
+        className="w-full  border-[1px] border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
         required
       />
     </div>
@@ -109,7 +109,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         onChange={(e) =>
           setFormData({ ...formData, password: e.target.value })
         }
-        className="w-full border-0 border-b border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
+        className="w-full  border-[1px] border-gray-300 focus:border-black focus:ring-0 rounded-none px-0"
         required
       />
     </div>

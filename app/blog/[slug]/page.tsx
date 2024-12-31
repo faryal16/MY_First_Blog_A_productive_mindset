@@ -125,9 +125,9 @@ type Props = PageProps &{
   };
 };
 
-export default function DynamicSlugPage({ params }: Props) {
+export default async function DynamicSlugPage({ params }: Props) {
   // Find the blog post based on the slug
-  const blogPost = blogPosts.find((post) => post.slug === params.slug);
+  const blogPost =await blogPosts.find((post) => post.slug === params.slug);
 
   // If no post is found, handle gracefully
   if (!blogPost) {

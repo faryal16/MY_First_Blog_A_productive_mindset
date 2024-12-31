@@ -19,7 +19,7 @@ export default function Page() {
             <span className="block mt-6">SUCCESS</span>
           </h1>
 
-          <p className="text-3xl md:text-5xl text-green-700 mb-12 max-w-2xl">
+          <p className="text-3xl md:text-5xl text-green-700 mb-12 text-center md:text-left max-w-2xl">
           Tips and tools for a productive mindset
           </p>
 

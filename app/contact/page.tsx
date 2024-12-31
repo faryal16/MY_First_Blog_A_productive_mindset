@@ -87,7 +87,7 @@ export default function ContactPage() {
   onChange={(e) =>
     setFormData({ ...formData, name: e.target.value })
   }
-  className="w-full border-0 border-b  px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black focus:ring-0  " // Added placeholder:ml-4 for margin
+  className="w-full  border-[1px] px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black focus:ring-0  " // Added placeholder:ml-4 for margin
   required
 />
 
@@ -100,7 +100,7 @@ export default function ContactPage() {
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
-               className="w-full border-0 border-b  px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black/60 focus:ring-0  "
+               className="w-full  border-[1px]  px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black/60 focus:ring-0  "
                 required
               />
             </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                 onChange={(e) =>
                   setFormData({ ...formData, phone: e.target.value })
                 }
-                 className="w-full border-0 border-b  px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black focus:ring-0  "
+                 className="w-full  border-[1px] px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black focus:ring-0  "
                 required
               />
             </div>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 setFormData({ ...formData, message: e.target.value })
               }
               rows={6}
-             className="w-full border-0 border-b  px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black focus:ring-0  "
+             className="w-full  border-[1px]  px-6 py-2 m-2 rounded-sm  border-gray-300 focus:border-black focus:ring-0  "
               required
             />
           </div>
